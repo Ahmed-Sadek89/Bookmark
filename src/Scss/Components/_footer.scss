@@ -1,0 +1,30 @@
+footer{
+    @apply py-5 text-bookmark-white bg-bookmark-blue;
+    .footer-container{
+        @apply container flex flex-col md:flex-row justify-between md:items-center gap-x-5;
+        .left-footer{
+            @apply flex-1;
+            ul{
+                @apply mb-5 md:mb-0 flex flex-row gap-x-10 gap-y-5 justify-center items-center md:justify-start flex-wrap md:flex-nowrap;
+                li{
+                    @apply text-sm cursor-pointer;
+                }
+            }
+        }
+        .right-footer{
+            @apply flex-1 flex flex-row gap-x-10 justify-center md:justify-end;
+            i{
+                @apply text-lg cursor-pointer;
+            }
+        }
+    }
+    .sadek{
+        @apply container mt-10 border-t border-bookmark-grey py-5;
+        p{
+            @apply text-center text-bookmark-white;
+            a{
+                @apply text-bookmark-grey
+            }
+        }
+    }
+}

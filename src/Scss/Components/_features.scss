@@ -1,0 +1,50 @@
+.features{
+    @apply bg-bookmark-white py-20;
+    &-desc{
+        @apply container text-center px-5 md:px-32;
+        h2{
+            @apply text-bookmark-blue text-4xl text-center;
+        }
+        p{
+            @apply text-bookmark-grey text-base py-5 ;
+        }
+    }
+    &-content-part1, &-content-part2, &-content-part3{
+        @apply container py-10 gap-16 ;
+        .img-content{
+            @apply w-full md:w-3/6 z-50 flex justify-center;
+            img{
+                @apply z-50;
+            }
+        }
+        .data-content{
+            @apply w-full md:w-3/6 text-center;
+            h2{
+                @apply mb-2 text-4xl md:text-3xl font-normal text-bookmark-blue;
+            }
+            p{
+                @apply my-6 text-bookmark-grey text-lg;
+            }
+        }
+
+    }
+    &-content-part1, &-content-part3{
+        @apply flex flex-col md:flex-row justify-between items-center;
+        .data-content{
+            @apply md:text-left;
+            
+        }
+        .features-outer-bg{
+            @apply hidden md:flex items-end w-4/12 h-60 bg-bookmark-purple z-10 rounded-br-full absolute left-0 bottom-0; 
+        }
+    }
+    &-content-part2{
+        @apply flex flex-col-reverse md:flex-row justify-between items-center;
+        .data-content{
+            @apply md:text-left;
+        }
+        .features-outer-bg{
+            @apply hidden md:flex items-end w-4/12 h-60 bg-bookmark-purple z-10 rounded-bl-full absolute right-0 bottom-0; 
+        }
+    }
+}

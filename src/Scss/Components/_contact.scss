@@ -1,0 +1,21 @@
+.contact{
+    @apply bg-bookmark-purple py-20 text-bookmark-white;
+    &-container{
+        @apply container flex flex-col items-center;
+        p{
+            @apply text-base md:text-xl text-center;
+        }
+        h2{
+            @apply text-2xl md:text-4xl my-5 text-center;
+        }
+    }
+    &-form{
+        @apply flex flex-col md:flex-row gap-5 w-2/4;
+        input{
+            @apply p-2 focus:outline-none rounded-lg text-bookmark-blue w-full md:w-9/12;
+        }
+        button{
+            @apply rounded-lg transition ease-in duration-300 bg-bookmark-red hover:bg-bookmark-white text-bookmark-white hover:text-bookmark-blue px-5 py-2 md:py-0 w-full md:w-3/12
+        }
+    }
+}

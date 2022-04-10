@@ -1,0 +1,25 @@
+.header{
+    @apply mb-4 pt-10 pb-6;
+    &-container{
+        @apply container flex justify-between items-center;
+    }
+    &-left{
+        @apply cursor-pointer
+    }
+    &-right{
+        &-sm{
+            ul{
+                @apply hidden md:flex justify-between gap-3 uppercase items-center text-sm;
+                li{
+                    @apply cursor-pointer;
+                    button{
+                        @apply bg-bookmark-red rounded uppercase text-bookmark-white px-4 py-2;
+                    }
+                }
+            }
+        }
+        &-md{
+            @apply md:hidden sm:block cursor-pointer text-2xl font-bold;
+        }
+    }
+}

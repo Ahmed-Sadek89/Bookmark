@@ -1,0 +1,33 @@
+.hero{
+    @apply mt-20 relative pb-40;
+    &-container{
+        @apply container flex flex-col md:flex-row-reverse justify-between items-center;
+    }
+    &-first-part{
+        @apply flex justify-center z-50 mb-10 md:mb-0;
+        img{
+            @apply w-full md:w-5/6 md:h-5/6;
+        }
+    }
+    &-second-part{
+        @apply w-full md:w-3/6 text-center md:text-left;
+        h2{
+            @apply mb-2 text-3xl md:text-5xl font-normal text-bookmark-blue;
+        }
+        p{
+            @apply my-6 text-bookmark-grey text-lg;
+        }
+        .hero-btn{
+            @apply flex flex-col mx-auto md:flex-row items-center md:block gap-y-2 
+        }
+        &-btn1{
+            @apply mr-0 md:mr-2 bg-bookmark-purple rounded-md text-bookmark-white py-4 px-6 transition ease-in duration-300 hover:bg-bookmark-white hover:text-bookmark-blue shadow-md;
+        }
+        &-btn2{
+            @apply bg-bookmark-white rounded-md text-bookmark-blue py-4 px-7 transition ease-in duration-300 hover:bg-bookmark-purple hover:text-bookmark-white shadow-md;
+        }
+    }
+    &-outer-bg{
+        @apply hidden md:flex w-5/12 h-60 bg-bookmark-purple z-10 rounded-bl-full ml-20 absolute right-0 top-32
+    }
+}

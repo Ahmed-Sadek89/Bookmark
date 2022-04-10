@@ -1,0 +1,30 @@
+.browsers{
+    @apply py-20;
+    &-contents{
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20;
+        .browsers-1, .browsers-2, .browsers-3{
+            @apply my-5 px-5 flex flex-col items-center shadow-md rounded-md translate-y-0;
+            .img{
+                @apply my-5;
+            }
+            h3{
+                @apply text-xl md:text-2xl mb-5 text-bookmark-blue;
+            }
+            p{
+                @apply py-0 text-bookmark-grey;
+            }
+            .hr{
+                @apply w-full my-10 border-b-2 border-bookmark-white
+            }
+            button{
+                @apply mx-1 md:mx-2 mb-10;
+            }
+        }
+        .browsers-2{
+            @apply lg:translate-y-4
+        }
+        .browsers-3{
+            @apply lg:translate-y-8
+        }
+    }
+}
